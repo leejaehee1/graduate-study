@@ -2,7 +2,7 @@
 
 > 컴퓨터특론 · *밑바닥부터 만들면서 배우는 LLM (Build a Large Language Model From Scratch)*
 > 원본: `1장_요약본.pdf` + `1장_실습.ipynb`
-> 다음 장: [2장. 텍스트 토큰화](02장_텍스트토큰화_정리.md)
+> 다음 장: [2장. 텍스트 토큰화](02-tokenize.md)
 
 ---
 

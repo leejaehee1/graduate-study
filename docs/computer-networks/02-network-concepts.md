@@ -3,7 +3,7 @@
 > 기준 자료: 한양대학교 공학대학원 컴퓨터공학, 한영진 교수, `ch02. Network Concepts.pdf`(2026, 12쪽).
 > 자료의 **Introduction to Networking → Network Fundamentals → Layered Models** 순서를 따른다. 쪽수는 표지를 포함한 PDF 기준이다. 본문의 비유·상세 풀이·자체 점검은 자습을 위한 보충 설명이며, 자료의 공식 정답과 구분한다.
 
-[이전 장: Introduction](network-ch01-introduction.md) · [다음 장: Network Technologies](network-ch03-network-technologies.md)
+[이전 장: Introduction](01-Introduction.md) · [다음 장: Network Technologies](03-network-technologies.md)
 
 ## 목차
 
@@ -74,7 +74,7 @@ ARPANET과 같은 초기 네트워크
 
 **인터넷과 WWW의 구분:** 인터넷은 네트워크들이 연결된 통신 기반이고, WWW는 웹 문서와 자원을 이용하는 서비스 체계다. 따라서 TCP/IP 설계자와 WWW 창시자를 같은 질문의 정답처럼 바꾸어 쓰면 안 된다.
 
-ARPANET의 개발 목적과 최초 메시지는 3장의 Review에서 다시 다룬다. 특히 ‘핵전쟁 대비가 유일한 개발 목적’이라는 설명은 역사적 사실과 구분해야 하므로 [3장 Review 해설](network-ch03-network-technologies.md#10-review-문제와-상세-해설)을 함께 참고한다.
+ARPANET의 개발 목적과 최초 메시지는 3장의 Review에서 다시 다룬다. 특히 ‘핵전쟁 대비가 유일한 개발 목적’이라는 설명은 역사적 사실과 구분해야 하므로 [3장 Review 해설](03-network-technologies.md#10-review-문제와-상세-해설)을 함께 참고한다.
 
 ## 3. Network Fundamentals: 네트워크 3요소
 
@@ -611,4 +611,4 @@ Data
 - [ ] 캡슐화와 역캡슐화를 헤더·Payload·Trailer로 설명한다.
 - [ ] p.11의 True/False 문제를 근거와 함께 풀 수 있다.
 
-**다음 학습:** [Chapter 3. Network Technologies](network-ch03-network-technologies.md)
+**다음 학습:** [Chapter 3. Network Technologies](03-network-technologies.md)

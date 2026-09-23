@@ -3,7 +3,7 @@
 > 기준 자료: 한양대학교 공학대학원 컴퓨터공학, 한영진 교수, `ch01. Introduction.pdf`(2026, 13쪽).
 > 이 문서는 강의자료의 **Course Information → Course Outline by Week** 순서를 따른 자습용 해설이다. 쪽수는 표지를 포함한 PDF 기준이다. ‘보충 설명’과 ‘자체 점검’은 슬라이드 이해를 위해 작성한 내용이며, 교수자가 제시한 시험 문제나 공식 해설은 아니다.
 
-[다음 장: Network Concepts](network-ch02-network-concepts.md) · [3장: Network Technologies](network-ch03-network-technologies.md)
+[다음 장: Network Concepts](02-network-concepts.md) · [3장: Network Technologies](03-network-technologies.md)
 
 ## 목차
 
@@ -367,4 +367,4 @@ Application    → 서비스 메시지와 의미
 - [ ] 계층 대응 그림과 실제 데이터 이동 방향을 구분할 수 있다.
 - [ ] 웹 요청 예시를 이용해 각 계층의 역할을 연결할 수 있다.
 
-**다음 학습:** [Chapter 2. Network Concepts](network-ch02-network-concepts.md)
+**다음 학습:** [Chapter 2. Network Concepts](02-network-concepts.md)

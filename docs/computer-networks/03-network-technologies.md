@@ -3,7 +3,7 @@
 > 기준 자료: 한양대학교 공학대학원 컴퓨터공학, 한영진 교수, `ch03. Network Technologies.pdf`(2026, 16쪽).
 > **3 Core Elements of Computer Networks → Network Terminology → Review** 순서로 정리했다. 쪽수는 표지를 포함한 PDF 기준이다. 그림의 의미와 개념 연결을 풀어 설명하고, 원문에서 혼동 가능한 문구는 해당 위치에 ‘자료 표현 주의’로 구분했다. Review의 답은 개념에 근거한 해설이며 교수자의 공식 정답표는 아니다.
 
-[이전 장: Network Concepts](network-ch02-network-concepts.md) · [1장: Introduction](network-ch01-introduction.md)
+[이전 장: Network Concepts](02-network-concepts.md) · [1장: Introduction](01-Introduction.md)
 
 ## 목차
 
@@ -661,4 +661,4 @@ Network들의 상호 연결 → Internet
 - [ ] Gateway와 DNS의 역할을 구분한다.
 - [ ] Review 6문항과 Q2의 역사적 주의점을 설명한다.
 
-**되돌아보기:** [Chapter 1. Introduction](network-ch01-introduction.md) · [Chapter 2. Network Concepts](network-ch02-network-concepts.md)
+**되돌아보기:** [Chapter 1. Introduction](01-Introduction.md) · [Chapter 2. Network Concepts](02-network-concepts.md)
