@@ -5,8 +5,12 @@
 ## 과목
 
 - [인공지능](./artificial-intelligence/)
-- 컴퓨터특론
-- 컴퓨터네트워크
+- [컴퓨터특론](./computer-special-topics/)
+- [컴퓨터네트워크](./computer-networks/)
+
+## 시험
+
+- [영어시험](./english-test/)
 
 ## 유틸리티
 

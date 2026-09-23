@@ -30,8 +30,8 @@
 
 AI의 정의는 두 질문으로 구분할 수 있다.
 
-1. 연구 대상이 **사고 과정(Thinking)**인가, **행동(Acting)**인가?
-2. 기준이 **인간(Humanly)**인가, **합리성(Rationally)**인가?
+1. 연구 대상이 **사고 과정(Thinking)** 인가, **행동(Acting)** 인가?
+2. 기준이 **인간(Humanly)** 인가, **합리성(Rationally)** 인가?
 
 | 구분 | Humanly: 인간을 기준으로 | Rationally: 합리적 기준으로 |
 |---|---|---|
@@ -140,11 +140,11 @@ Input ───────────────→ Output
 Input → 기억·지식·추론·판단 → Output
 ```
 
-이 접근에서는 정답을 내는 프로그램을 만들었다는 사실만으로 충분하지 않다. **그 모델이 인간의 실제 사고와 행동을 설명하는가?**라는 검증이 필요하다.
+이 접근에서는 정답을 내는 프로그램을 만들었다는 사실만으로 충분하지 않다. **그 모델이 인간의 실제 사고와 행동을 설명하는가?** 라 는 검증이 필요하다.
 
 ### 어느 수준에서 설명할 것인가?
 
-슬라이드의 질문은 **“Knowledge or circuits?”**이다.
+슬라이드의 질문은 **“Knowledge or circuits?”** 이다.
 
 | 설명 수준 | 초점 |
 |---|---|
@@ -465,7 +465,7 @@ the vodka is good but the meat is rotten
 
 ### 8.6 Knowledge-based systems: The key to power? 1969–1979
 
-슬라이드는 **Dendral, Mycin**, Mycin의 **certainty factor**, **Prolog(1972, EU), Planner(US)**를 제시한다.
+슬라이드는 **Dendral, Mycin**, Mycin의 **certainty factor**, **Prolog(1972, EU), Planner(US)** 를 제시한다.
 
 학습 해설의 중심은 일반적인 문제 해결 절차뿐 아니라 **특정 분야의 지식**이 중요하다는 방향 전환이다. 어떤 문제를 푸는 데 필요한 지식을 갖추고 그것을 활용할 수 있어야 한다.
 
@@ -535,7 +535,7 @@ Minsky의 **Frames**는 특정 객체에 관한 사실과 종류의 분류 체�
 
 ### 슬라이드 핵심
 
-슬라이드는 **“Which of the following can be done at present?”**라는 질문과 14개 과제를 제시한다. 확인 가능한 본문에는 각 항목의 가능·불가능에 대한 답이 없다.
+슬라이드는 **“Which of the following can be done at present?”** 라는 질문과 14개 과제를 제시한다. 확인 가능한 본문에는 각 항목의 가능·불가능에 대한 답이 없다.
 
 따라서 이 절에서는 현재의 기술 수준을 추정해 Yes/No를 붙이지 않는다. 이전 대화에서 공부한 것처럼 **각 과제가 어떤 능력의 조합을 요구하는지**를 살펴본다.
 
