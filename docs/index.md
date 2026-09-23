@@ -10,4 +10,4 @@
 
 ## 유틸리티
 
-- [단어 정리](/graduate-study/word.html)
+- <a href="/graduate-study/word.html" target="_blank">단어 정리</a>
