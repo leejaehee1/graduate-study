@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영어 단어 추출기</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px; background: #fafafa; color: #222; }
+  textarea { width: 100%; height: 160px; font-size: 16px; padding: 10px; box-sizing: border-box; }
+  .row { display: flex; gap: 8px; margin: 10px 0; align-items: center; flex-wrap: wrap; }
+  button { font-size: 15px; padding: 8px 14px; cursor: pointer; }
+  select { font-size: 14px; padding: 6px; max-width: 100%; }
+  ul { list-style: none; padding: 0; }
+  li { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid #e3e3e3; border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+  li button { background: #fff; border: 1px solid #ccc; border-radius: 6px; font-size: 18px; min-width: 120px; text-align: left; flex-shrink: 0; }
+  li button:hover { background: #e8f0ff; border-color: #6a8fd8; }
+  li button.playing { background: #cfe0ff; }
+  .meaning { font-size: 15px; line-height: 1.5; }
+  .ko { color: #222; }
+  .ko b { color: #6a8fd8; font-weight: normal; font-size: 12px; margin-right: 4px; }
+  .en { color: #777; font-size: 13px; margin-top: 2px; }
+  .count { color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+<h2>영어 단어 추출기 🔊</h2>
+<textarea id="input" placeholder="예: 오늘 apple 하고 banana 를 먹었다. 그리고 beautiful 한 sunset 을 봤다."></textarea>
+<div class="row">
+  <button id="extract">단어 추출</button>
+  <label><input type="checkbox" id="dedupe" checked> 중복 제거</label>
+  <label><input type="checkbox" id="lower" checked> 소문자로</label>
+</div>
+<div class="row">
+  음성: <select id="voice"></select>
+  <label><input type="checkbox" id="useDict" checked> 사전 녹음 발음 우선</label>
+</div>
+<div class="count" id="count"></div>
+<ul id="list"></ul>
+
+<script>
+const $ = id => document.getElementById(id);
+let voices = [];
+
+function loadVoices() {
+  voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+  // 미국/영국 원어민 음성 우선 정렬
+  const score = v => (v.lang === 'en-US' ? 0 : v.lang === 'en-GB' ? 1 : 2)
+    - (/Samantha|Google US|Alex|Ava|Daniel/i.test(v.name) ? 0.5 : 0);
+  voices.sort((a, b) => score(a) - score(b));
+  $('voice').innerHTML = voices.map((v, i) => `<option value="${i}">${v.name} (${v.lang})</option>`).join('');
+}
+loadVoices();
+speechSynthesis.onvoiceschanged = loadVoices;
+
+function extract(text) {
+  // 영어 단어(아포스트로피/하이픈 포함)만 추출
+  let words = text.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g) || [];
+  if ($('lower').checked) words = words.map(w => w.toLowerCase());
+  if ($('dedupe').checked) words = [...new Set(words)];
+  return words;
+}
+
+function tts(word) {
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(word);
+  const v = voices[$('voice').value];
+  if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = 'en-US'; }
+  u.rate = 1.0;
+  speechSynthesis.speak(u);
+}
+
+// 단어 -> 미리 로드된 Audio 객체 (null = 녹음 없음, 없음 = 아직 로딩 중)
+const audioCache = {};
+const dictCache = {};
+async function prefetch(word) {
+  if (word in audioCache) return showEnglishDef(word, dictCache[word]);
+  try {
+    const res = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word.toLowerCase()));
+    const data = dictCache[word] = await res.json();
+    const phonetics = Array.isArray(data) ? data.flatMap(d => d.phonetics || []) : [];
+    showEnglishDef(word, data);
+    const pick = phonetics.find(p => p.audio && /-us\.mp3$/.test(p.audio)) || phonetics.find(p => p.audio);
+    if (!pick) return audioCache[word] = null;
+    const a = new Audio(pick.audio);
+    a.preload = 'auto';
+    a.load();
+    audioCache[word] = a;
+  } catch { audioCache[word] = null; }
+}
+
+const POS_KO = { noun: '명', verb: '동', adjective: '형', adverb: '부', pronoun: '대', preposition: '전', conjunction: '접', interjection: '감', abbreviation: '약' };
+const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const cell = (word, cls) => document.querySelector(`li[data-word="${CSS.escape(word)}"] .${cls}`);
+
+// 한국어 뜻 (품사별 상위 뜻)
+async function fetchKorean(word) {
+  const el = cell(word, 'ko');
+  try {
+    const res = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ko&dt=t&dt=bd&q=' + encodeURIComponent(word));
+    const d = await res.json();
+    const dict = d[1] || [];
+    const html = dict.length
+      ? dict.map(e => `<b>${POS_KO[e[0]] || e[0]}</b>${esc(e[1].slice(0, 5).join(', '))}`).join('<br>')
+      : esc(d[0].map(x => x[0]).join(''));
+    if (el) el.innerHTML = html;
+  } catch { if (el) el.textContent = '(뜻을 불러오지 못함)'; }
+}
+
+// 영어 정의 (사전 API 응답에서 첫 번째 정의)
+function showEnglishDef(word, data) {
+  const el = cell(word, 'en');
+  if (!el) return;
+  const m = Array.isArray(data) && data[0].meanings && data[0].meanings[0];
+  const def = m && m.definitions[0] && m.definitions[0].definition;
+  el.textContent = def ? `(${m.partOfSpeech}) ${def}` : '';
+}
+
+function play(word, btn) {
+  btn.classList.add('playing');
+  setTimeout(() => btn.classList.remove('playing'), 600);
+  const a = audioCache[word];
+  // 녹음이 이미 준비됐을 때만 사용, 아니면 기다리지 않고 바로 TTS
+  if ($('useDict').checked && a && a.readyState >= 3) {
+    speechSynthesis.cancel();
+    a.currentTime = 0;
+    a.play().catch(() => tts(word));
+    return;
+  }
+  tts(word);
+}
+
+$('extract').onclick = () => {
+  const words = extract($('input').value);
+  $('count').textContent = `${words.length}개 단어`;
+  $('list').innerHTML = '';
+  words.forEach(w => {
+    const li = document.createElement('li');
+    li.dataset.word = w;
+    li.innerHTML = `<button>🔊 ${esc(w)}</button><div class="meaning"><div class="ko">…</div><div class="en"></div></div>`;
+    const b = li.querySelector('button');
+    b.onclick = () => play(w, b);
+    $('list').appendChild(li);
+  });
+  // 추출 즉시 뜻과 발음을 병렬로 미리 받아둠
+  words.forEach(w => { fetchKorean(w); prefetch(w); });
+  // TTS 엔진 워밍업 (첫 재생 지연 감소)
+  speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(' '), { volume: 0 }));
+};
+$('input').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) $('extract').click();
+});
+</script>
+</body>
+</html>

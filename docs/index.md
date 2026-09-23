@@ -7,3 +7,7 @@
 - [인공지능](./artificial-intelligence/)
 - 컴퓨터특론
 - 컴퓨터네트워크
+
+## 유틸리티
+
+- [단어 정리](./word.html)
