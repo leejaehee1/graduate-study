@@ -10,4 +10,4 @@
 
 ## 유틸리티
 
-- [단어 정리](./word.html)
+- [단어 정리](/graduate-study/word.html)
