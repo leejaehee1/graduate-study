@@ -2,7 +2,7 @@
 
 > 컴퓨터특론 · *밑바닥부터 만들면서 배우는 LLM* (원서 3장 도입 ~ 3.4절)
 > 원본: `4장_요약본.pdf` + `4장_실습.ipynb`
-> 이전 장: [3장. 데이터 샘플링과 임베딩](03-sampling_embedding.md)
+> 이전 장: [3장. 데이터 샘플링과 임베딩](03-sampling_embedding.md) · 다음 장: [5장. 코잘·멀티 헤드 어텐션](05-causal_multihead_attention.md)
 
 ---
 
