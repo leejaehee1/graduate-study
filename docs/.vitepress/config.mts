@@ -6,6 +6,10 @@ export default defineConfig({
 
   base: '/graduate-study/',
 
+  markdown: {
+    math: true
+  },
+
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
