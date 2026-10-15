@@ -2,6 +2,10 @@
 
 컴퓨터 특론 과목 학습 내용을 정리합니다.
 
+## 시험 대비
+
+- [중간고사 대비 — LLM 1~5장](./midterm-review.md)
+
 ## 목차
 
 - [1장. LLM이해하기](./01-understanding_LLM.md)
