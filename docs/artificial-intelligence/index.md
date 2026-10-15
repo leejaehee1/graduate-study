@@ -9,3 +9,4 @@
 - [3장. 탐색](./03-search.md)
 - [4장. 실무프로 젝트 - YOLO](./04-YOLO.md)
 - [7장. 논리적 에이전트](./05-logical-agents.md)
+- [실무 프로젝트 2 - YOLO 학습(Fine-tuning)과 응용](./06-YOLO-finetuning.md)
