@@ -7,19 +7,19 @@
 
 ## 목차
 
-1. [학습 목표와 2장과의 연결](#1-학습-목표와-2장과의-연결)
-2. [Interface: 연결하고 기능을 이용하는 접점](#2-interface-연결하고-기능을-이용하는-접점)
-3. [Protocol: 데이터를 교환하는 대화 규칙](#3-protocol-데이터를-교환하는-대화-규칙)
-4. [Standardization: 함께 동작하기 위한 공통 규격](#4-standardization-함께-동작하기-위한-공통-규격)
-5. [Recommended Additions: 상호 운용성과 표준화 기구](#5-recommended-additions-상호-운용성과-표준화-기구)
-6. [System과 Transmission Media](#6-system과-transmission-media)
-7. [Internet과 Network](#7-internet과-network)
-8. [Node: 엔드 노드와 중계 노드](#8-node-엔드-노드와-중계-노드)
-9. [Gateway와 DNS](#9-gateway와-dns)
-10. [Review 문제와 상세 해설](#10-review-문제와-상세-해설)
-11. [통합 예시와 헷갈리기 쉬운 포인트](#11-통합-예시와-헷갈리기-쉬운-포인트)
-12. [시험 대비 핵심과 자체 점검](#12-시험-대비-핵심과-자체-점검)
-13. [장 마지막 총정리](#13-장-마지막-총정리)
+1. [학습 목표와 2장과의 연결](#_1-학습-목표와-2장과의-연결)
+2. [Interface: 연결하고 기능을 이용하는 접점](#_2-interface-연결하고-기능을-이용하는-접점)
+3. [Protocol: 데이터를 교환하는 대화 규칙](#_3-protocol-데이터를-교환하는-대화-규칙)
+4. [Standardization: 함께 동작하기 위한 공통 규격](#_4-standardization-함께-동작하기-위한-공통-규격)
+5. [Recommended Additions: 상호 운용성과 표준화 기구](#_5-recommended-additions-상호-운용성과-표준화-기구)
+6. [System과 Transmission Media](#_6-system과-transmission-media)
+7. [Internet과 Network](#_7-internet과-network)
+8. [Node: 엔드 노드와 중계 노드](#_8-node-엔드-노드와-중계-노드)
+9. [Gateway와 DNS](#_9-gateway와-dns)
+10. [Review 문제와 상세 해설](#_10-review-문제와-상세-해설)
+11. [통합 예시와 헷갈리기 쉬운 포인트](#_11-통합-예시와-헷갈리기-쉬운-포인트)
+12. [시험 대비 핵심과 자체 점검](#_12-시험-대비-핵심과-자체-점검)
+13. [장 마지막 총정리](#_13-장-마지막-총정리)
 
 ## 1. 학습 목표와 2장과의 연결
 

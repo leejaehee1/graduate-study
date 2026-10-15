@@ -9,15 +9,15 @@
 
 ## 📌 목차
 
-0. [2장과의 연결: 왜 탐색인가?](#0-2장과의-연결-왜-탐색인가)
-1. [문제 해결 에이전트 (Problem-solving Agents)](#1-문제-해결-에이전트-problem-solving-agents)
-2. [문제 정의 (Problem Formulation)](#2-문제-정의-problem-formulation)
-3. [트리 탐색과 탐색 전략의 평가 기준](#3-트리-탐색과-탐색-전략의-평가-기준)
-4. [무정보 탐색 (Uninformed Search)](#4-무정보-탐색-uninformed-search)
-5. [정보 탐색 / 휴리스틱 탐색 (Informed Search)](#5-정보-탐색--휴리스틱-탐색-informed-search)
-6. [요약](#6-요약-summary)
-7. [셀프 체크 퀴즈](#7-셀프-체크-퀴즈)
-8. [부록: Python 실습 코드](#8-부록-python-실습-코드)
+0. [2장과의 연결: 왜 탐색인가?](#_0-2장과의-연결-왜-탐색인가)
+1. [문제 해결 에이전트 (Problem-solving Agents)](#_1-문제-해결-에이전트-problem-solving-agents)
+2. [문제 정의 (Problem Formulation)](#_2-문제-정의-problem-formulation)
+3. [트리 탐색과 탐색 전략의 평가 기준](#_3-트리-탐색과-탐색-전략의-평가-기준)
+4. [무정보 탐색 (Uninformed Search)](#_4-무정보-탐색-uninformed-search)
+5. [정보 탐색 / 휴리스틱 탐색 (Informed Search)](#_5-정보-탐색-휴리스틱-탐색-informed-search)
+6. [요약](#_6-요약-summary)
+7. [셀프 체크 퀴즈](#_7-셀프-체크-퀴즈)
+8. [부록: Python 실습 코드](#_8-부록-python-실습-코드)
 
 > 📝 표기: **[보충]** 이 붙은 내용은 슬라이드에 없지만 이해를 돕거나 교재에서 가져온 설명이다.
 

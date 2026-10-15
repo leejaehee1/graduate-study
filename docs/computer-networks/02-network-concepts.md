@@ -7,18 +7,18 @@
 
 ## 목차
 
-1. [이 장의 학습 목표](#1-이-장의-학습-목표)
-2. [Introduction to Networking](#2-introduction-to-networking)
-3. [Network Fundamentals: 네트워크 3요소](#3-network-fundamentals-네트워크-3요소)
-4. [Layered Models: 통신을 계층으로 나누는 이유](#4-layered-models-통신을-계층으로-나누는-이유)
-5. [OSI 7계층의 역할](#5-osi-7계층의-역할)
-6. [TCP/IP 4계층과 OSI의 대응](#6-tcpip-4계층과-osi의-대응)
-7. [PDU: Data·Segment·Packet·Frame·Bit](#7-pdu-datasegmentpacketframebit)
-8. [PDU Flow 1: 캡슐화와 역캡슐화](#8-pdu-flow-1-캡슐화와-역캡슐화)
-9. [PDU Flow 2: 그림 속 포함 관계 읽기](#9-pdu-flow-2-그림-속-포함-관계-읽기)
-10. [강의자료 확인 문제와 해설](#10-강의자료-확인-문제와-해설)
-11. [헷갈리기 쉬운 포인트와 시험 대비](#11-헷갈리기-쉬운-포인트와-시험-대비)
-12. [장 마지막 총정리](#12-장-마지막-총정리)
+1. [이 장의 학습 목표](#_1-이-장의-학습-목표)
+2. [Introduction to Networking](#_2-introduction-to-networking)
+3. [Network Fundamentals: 네트워크 3요소](#_3-network-fundamentals-네트워크-3요소)
+4. [Layered Models: 통신을 계층으로 나누는 이유](#_4-layered-models-통신을-계층으로-나누는-이유)
+5. [OSI 7계층의 역할](#_5-osi-7계층의-역할)
+6. [TCP/IP 4계층과 OSI의 대응](#_6-tcp-ip-4계층과-osi의-대응)
+7. [PDU: Data·Segment·Packet·Frame·Bit](#_7-pdu-data·segment·packet·frame·bit)
+8. [PDU Flow 1: 캡슐화와 역캡슐화](#_8-pdu-flow-1-캡슐화와-역캡슐화)
+9. [PDU Flow 2: 그림 속 포함 관계 읽기](#_9-pdu-flow-2-그림-속-포함-관계-읽기)
+10. [강의자료 확인 문제와 해설](#_10-강의자료-확인-문제와-해설)
+11. [헷갈리기 쉬운 포인트와 시험 대비](#_11-헷갈리기-쉬운-포인트와-시험-대비)
+12. [장 마지막 총정리](#_12-장-마지막-총정리)
 
 ## 1. 이 장의 학습 목표
 
@@ -74,7 +74,7 @@ ARPANET과 같은 초기 네트워크
 
 **인터넷과 WWW의 구분:** 인터넷은 네트워크들이 연결된 통신 기반이고, WWW는 웹 문서와 자원을 이용하는 서비스 체계다. 따라서 TCP/IP 설계자와 WWW 창시자를 같은 질문의 정답처럼 바꾸어 쓰면 안 된다.
 
-ARPANET의 개발 목적과 최초 메시지는 3장의 Review에서 다시 다룬다. 특히 ‘핵전쟁 대비가 유일한 개발 목적’이라는 설명은 역사적 사실과 구분해야 하므로 [3장 Review 해설](03-network-technologies.md#10-review-문제와-상세-해설)을 함께 참고한다.
+ARPANET의 개발 목적과 최초 메시지는 3장의 Review에서 다시 다룬다. 특히 ‘핵전쟁 대비가 유일한 개발 목적’이라는 설명은 역사적 사실과 구분해야 하므로 [3장 Review 해설](03-network-technologies.md#_10-review-문제와-상세-해설)을 함께 참고한다.
 
 ## 3. Network Fundamentals: 네트워크 3요소
 

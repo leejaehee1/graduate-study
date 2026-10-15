@@ -7,13 +7,13 @@
 
 ## 📌 목차
 
-1. [에이전트와 환경 (Agents and Environments)](#1-에이전트와-환경-agents-and-environments)
-2. [합리성 (Rationality)](#2-합리성-rationality)
-3. [PEAS: 작업 환경 명세](#3-peas-작업-환경-명세)
-4. [환경의 유형 (Environment Types)](#4-환경의-유형-environment-types)
-5. [에이전트의 구조 (The Structure of Agents)](#5-에이전트의-구조-the-structure-of-agents)
-6. [요약](#6-요약-summary)
-7. [셀프 체크 퀴즈](#7-셀프-체크-퀴즈)
+1. [에이전트와 환경 (Agents and Environments)](#_1-에이전트와-환경-agents-and-environments)
+2. [합리성 (Rationality)](#_2-합리성-rationality)
+3. [PEAS: 작업 환경 명세](#_3-peas-작업-환경-명세)
+4. [환경의 유형 (Environment Types)](#_4-환경의-유형-environment-types)
+5. [에이전트의 구조 (The Structure of Agents)](#_5-에이전트의-구조-the-structure-of-agents)
+6. [요약](#_6-요약-summary)
+7. [셀프 체크 퀴즈](#_7-셀프-체크-퀴즈)
 
 ### 이 장의 핵심 질문
 

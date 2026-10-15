@@ -8,14 +8,14 @@
 
 ## 📌 목차
 
-1. [Computer Vision이란?](#1-computer-vision이란)
-2. [CNN과 합성곱 (Convolution)](#2-cnn과-합성곱-convolution)
-3. [풀링 (Pooling)](#3-풀링-pooling)
-4. [YOLO (You Only Look Once)](#4-yolo-you-only-look-once)
-5. [후처리와 평가 지표: IoU, Precision, Recall, mAP](#5-후처리와-평가-지표-iou-precision-recall-map)
-6. [실습: Ultralytics YOLO11로 객체 검출](#6-실습-ultralytics-yolo11로-객체-검출)
-7. [요약](#7-요약)
-8. [셀프 체크 퀴즈](#8-셀프-체크-퀴즈)
+1. [Computer Vision이란?](#_1-computer-vision이란)
+2. [CNN과 합성곱 (Convolution)](#_2-cnn과-합성곱-convolution)
+3. [풀링 (Pooling)](#_3-풀링-pooling)
+4. [YOLO (You Only Look Once)](#_4-yolo-you-only-look-once)
+5. [후처리와 평가 지표: IoU, Precision, Recall, mAP](#_5-후처리와-평가-지표-iou-precision-recall-map)
+6. [실습: Ultralytics YOLO11로 객체 검출](#_6-실습-ultralytics-yolo11로-객체-검출)
+7. [요약](#_7-요약)
+8. [셀프 체크 퀴즈](#_8-셀프-체크-퀴즈)
 
 > 📝 표기: **[보충]** 이 붙은 내용은 슬라이드에 없지만 이해를 돕기 위해 추가한 설명이다.
 
