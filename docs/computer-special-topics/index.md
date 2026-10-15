@@ -4,7 +4,7 @@
 
 ## 시험 대비
 
-- [중간고사 대비 — LLM 1~5장](./midterm-review.md)
+- [중간고사 대비 — LLM 1~5장](./midterm-review.md) · 시험일 2026-10-20(화)
 
 ## 목차
 
