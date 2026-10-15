@@ -1,16 +1,22 @@
 # 컴퓨터 특론
 
-컴퓨터 특론 과목 학습 내용을 정리합니다.
+컴퓨터 특론 과목 학습 내용을 정리합니다. 교재 *밑바닥부터 만들면서 배우는 LLM* (Build a Large Language Model From Scratch) 기반입니다.
 
-## 시험 대비
+## 중간고사
 
-- [중간고사 대비 — LLM 1~5장](./midterm-review.md) · 시험일 2026-10-20(화)
+| 항목 | 내용 |
+|---|---|
+| **시험일** | **2026-10-20(화)** |
+| **범위** | **1장 ~ 5장**, 25문항 (각 장 연습 문제 출제 예정) |
+| **대비 자료** | [중간고사 대비 — 공지 범위, 연습 문제 10개, 예상 100제 요약](./midterm-review.md) |
 
 ## 목차
 
-- [1장. LLM이해하기](./01-understanding_LLM.md)
-- [2장. 텍스트토큰화](./02-tokenize.md)
-- [3장. 데이터샘플링과임베딩](./03-sampling_embedding.md)
-- [4장. 셀프어텐션](./04-self_attention.md)
-- [5장. 코잘·멀티 헤드 어텐션](./05-causal_multihead_attention.md)
-- [6장. GPT 구성 요소](./06-gpt_components.md)
+| 장 | 주제 |
+|---|---|
+| [1장. LLM 이해하기](./01-understanding_LLM.md) | 다음 토큰 예측, 사전 훈련·미세 튜닝, 트랜스포머, BERT vs GPT |
+| [2장. 텍스트 토큰화](./02-tokenize.md) | 임베딩, 어휘사전, 특수 토큰, BPE |
+| [3장. 데이터 샘플링과 임베딩](./03-sampling_embedding.md) | 슬라이딩 윈도, 데이터 로더, 토큰·위치 임베딩 |
+| [4장. 셀프 어텐션](./04-self_attention.md) | 점곱·소프트맥스·문맥 벡터, 쿼리·키·값, 스케일드 점곱 어텐션 |
+| [5장. 코잘·멀티 헤드 어텐션](./05-causal_multihead_attention.md) | 코잘 마스크, 드롭아웃, 멀티 헤드 어텐션 |
+| [6장. GPT 구성 요소](./06-gpt_components.md) | 층 정규화, GELU, 피드 포워드, 숏컷 연결 |

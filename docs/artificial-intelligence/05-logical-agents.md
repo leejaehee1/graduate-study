@@ -1,8 +1,8 @@
-# 7장. 논리적 에이전트 (Logical Agents)
+# Chapter 7. 논리적 에이전트 (Logical Agents)
 
 > 인공지능 강의 정리 노트
 > 원본: `AI-ch07.pdf` (Russell & Norvig, *Artificial Intelligence: A Modern Approach* 7장 기반)
-> 이전 장: [4강. YOLO 실습](./04-YOLO.md) · 관련 장: [2장. 지능형 에이전트](./02-intelligent-agents.md), [3장. 탐색](./03-search.md)
+> 이전 장: [Chapter 3. 탐색](./03-search.md) · 관련 장: [2장. 지능형 에이전트](./02-intelligent-agents.md), [3장. 탐색](./03-search.md)
 
 ---
 

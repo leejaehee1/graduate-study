@@ -31,7 +31,10 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: '인공지능', link: '/artificial-intelligence/' }
+      { text: '인공지능', link: '/artificial-intelligence/' },
+      { text: '컴퓨터 특론', link: '/computer-special-topics/' },
+      { text: '컴퓨터 네트워크', link: '/computer-networks/' },
+      { text: '어학시험', link: '/english-test/' }
     ]
   }
 })

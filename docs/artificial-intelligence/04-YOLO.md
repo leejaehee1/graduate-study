@@ -1,6 +1,7 @@
-# 4강. Computer Vision과 Object Detection (YOLO 실습)
+# 실무 프로젝트 1. Computer Vision과 Object Detection (YOLO 실습)
 
-> 인공지능 4번째 강의 (실무 프로젝트) 정리 노트 — 2026. 09. 21
+> 인공지능 실무 프로젝트 1 정리 노트 — 2026. 09. 21
+> 다음 실습: [실무 프로젝트 2. YOLO 학습(Fine-tuning)과 응용](./06-YOLO-finetuning.md)
 > 원본: `20260921DPLR.pptx` (강의 슬라이드), `0922실습.ipynb` (실습 노트북)
 > 이미지 파일은 같은 폴더의 `AI-04-images/` 에 있다.
 
