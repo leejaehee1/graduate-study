@@ -9,3 +9,4 @@
 - [3장. 데이터샘플링과임베딩](./03-sampling_embedding.md)
 - [4장. 셀프어텐션](./04-self_attention.md)
 - [5장. 코잘·멀티 헤드 어텐션](./05-causal_multihead_attention.md)
+- [6장. GPT 구성 요소](./06-gpt_components.md)
