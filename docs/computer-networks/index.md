@@ -2,11 +2,28 @@
 
 컴퓨터 네트워크 과목 학습 내용을 정리합니다.
 
+## 목차
+
+| 장 | 주제 |
+|---|---|
+| [1장. Introduction](./01-Introduction.md) | 컴퓨터 네트워크 학습의 큰 그림 |
+| [2장. Network Concepts](./02-network-concepts.md) | 네트워크 3요소, OSI 7계층과 TCP/IP, PDU와 캡슐화 |
+| [3장. Network Technologies](./03-network-technologies.md) | 인터페이스, 프로토콜, 표준화, 전송 매체, DNS |
+| [4장. Network Access Layer](./04-network-access-layer.md) | 토폴로지, IEEE 802, MAC/LLC, CSMA/CD·CA, 토큰, 도메인 |
+| [5장. Internet Layer](./05-internet-layer.md) | 네트워크 계층 기능, 연결형/비연결형, 라우팅 (p.9까지) |
+| [5장 (Part 2). Internet Layer — 후반부](./05-internet-layer-part2.md) | 라우팅 테이블, 실습(`route print`·`ping`·`arp`), 라우팅 정보 처리, 혼잡 제어·트래픽 성형·ECN (p.10~27) |
+
+---
+
 ## 중간고사
+
+> ✅ **2026-10-22(목) 중간고사 완료** (범위: 1장 ~ 5장 p.9 정적·동적 라우팅까지)
+
+<details><summary>📋 지난 중간고사 출제 메모 및 복습 범위 펼치기</summary>
 
 | 항목 | 내용 |
 |---|---|
-| **시험일** | **2026-10-22(목)** · 메모상 "40분에 시험 시작" |
+| **시험일** | **2026-10-22(목)** 완료 · 메모상 "40분에 시험 시작" |
 | **범위** | **1장 ~ 5장** (5장은 p.9 정적·동적 라우팅까지) |
 | **문항** | 메모마다 다름 — p.1 "단답식 10개 + 서술형 6문항" / p.9 "6~7문제(단답식 3, 서술형 3~4)" |
 | **출제 메모 정리** | [5장 0절. 중간고사 대비](./05-internet-layer.md#_0-중간고사-대비-p-1-p-2-수업-메모) — 교수님이 알려 주신 단답식·서술형 목록과 답의 방향 |
@@ -28,13 +45,4 @@
 
 > 출제 제외: 토큰 버킷, 계층적인 전달 순서
 
-## 목차
-
-| 장 | 주제 |
-|---|---|
-| [1장. Introduction](./01-Introduction.md) | 컴퓨터 네트워크 학습의 큰 그림 |
-| [2장. Network Concepts](./02-network-concepts.md) | 네트워크 3요소, OSI 7계층과 TCP/IP, PDU와 캡슐화 |
-| [3장. Network Technologies](./03-network-technologies.md) | 인터페이스, 프로토콜, 표준화, 전송 매체, DNS |
-| [4장. Network Access Layer](./04-network-access-layer.md) | 토폴로지, IEEE 802, MAC/LLC, CSMA/CD·CA, 토큰, 도메인 |
-| [5장. Internet Layer](./05-internet-layer.md) | 네트워크 계층 기능, 연결형/비연결형, 라우팅 (p.9까지) |
-| [5장 (Part 2). Internet Layer — 후반부](./05-internet-layer-part2.md) | 라우팅 테이블, 실습(`route print`·`ping`·`arp`), 라우팅 정보 처리, 혼잡 제어·트래픽 성형·ECN (p.10~27) |
+</details>
