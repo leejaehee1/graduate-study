@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  macOS launchd 정기 자동 실행 설정 예시 파일
+  설치 방법:
+    cp /Users/jsoftware/edu/graduate-study/scripts/com.graduate-study.sync.plist.example ~/Library/LaunchAgents/com.graduate-study.sync.plist
+    launchctl load ~/Library/LaunchAgents/com.graduate-study.sync.plist
+  해제 방법:
+    launchctl unload ~/Library/LaunchAgents/com.graduate-study.sync.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.graduate-study.sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/jsoftware/edu/graduate-study/scripts/run-pipeline.sh</string>
+        <string>--sync</string>
+        <string>--retry-failed</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/jsoftware/edu/graduate-study</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- 매일 저녁 21:00 자동 실행 (원하는 요일/시각으로 조정 가능) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>21</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/jsoftware/edu/graduate-study/scripts/logs/launchd-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jsoftware/edu/graduate-study/scripts/logs/launchd-stderr.log</string>
+</dict>
+</plist>

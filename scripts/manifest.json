@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-10-25T20:22:36+09:00",
+  "config": {
+    "rclone_remote": "gdrive",
+    "local_source_root": "/Users/jsoftware/Documents/대학원",
+    "docs_root": "/Users/jsoftware/edu/graduate-study/docs",
+    "prompt_template": "scripts/prompts/common-lecture-prompt.md",
+    "courses": {
+      "artificial-intelligence": {
+        "course_title": "인공지능 (Artificial Intelligence)",
+        "gdrive_subpath": "대학원/인공지능",
+        "local_dir": "/Users/jsoftware/Documents/대학원/인공지능",
+        "docs_dir": "docs/artificial-intelligence"
+      },
+      "computer-networks": {
+        "course_title": "컴퓨터 네트워크 (Computer Network)",
+        "gdrive_subpath": "대학원/컴퓨터 네트워크",
+        "local_dir": "/Users/jsoftware/Documents/대학원/컴퓨터 네트워크",
+        "docs_dir": "docs/computer-networks"
+      }
+    }
+  },
+  "entries": [
+    {
+      "id": "ai-ch01",
+      "course": "artificial-intelligence",
+      "source_pdf": "AI-ch01.pdf",
+      "source_sha256": "20d0eaf41a369b7435c95d6f50aefc49fa873aefdf46c6d339283a",
+      "full_sha256": "20d0eaf41a369b7435c95d6f284adc6f5f00aefc49fa873aefdf46c6d339283a",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/01-introduction.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "ai-ch02",
+      "course": "artificial-intelligence",
+      "source_pdf": "AI-ch02.pdf",
+      "full_sha256": "98d2815eac3fe643664dde7eb34099b827f01e154486170250c0eb3d7be74b58",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/02-intelligent-agents.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "ai-ch03",
+      "course": "artificial-intelligence",
+      "source_pdf": "AI-ch03.pdf",
+      "full_sha256": "7beee3ba45a75bdf3f3249d6ece528fce160c62a2c42c5aad50c080e089193c7",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/03-search.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "ai-ch07",
+      "course": "artificial-intelligence",
+      "source_pdf": "AI-ch07.pdf",
+      "full_sha256": "4adc0ed9f2111e0d03cbf4d76076b66c934f6459eba01e588e53cee47b952b64",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/05-logical-agents.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch01",
+      "course": "computer-networks",
+      "source_pdf": "ch01. Introduction.pdf",
+      "full_sha256": "b3973829630977bfad58a3cae62f7772e8f411ed954fd51176c94cb70a5ab84b",
+      "page_range": "all",
+      "target_md": "docs/computer-networks/01-Introduction.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch02",
+      "course": "computer-networks",
+      "source_pdf": "ch02. Network Concepts.pdf",
+      "full_sha256": "153346a9303d55059e686b7ca509e34934582ad01d26a795819e2bb7ad37e281",
+      "page_range": "all",
+      "target_md": "docs/computer-networks/02-network-concepts.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch03",
+      "course": "computer-networks",
+      "source_pdf": "ch03. Network Technologies.pdf",
+      "full_sha256": "f140f7cb3fb7df38d77fcd9156547469826d725feb984015df1aa8ad0f10d604",
+      "page_range": "all",
+      "target_md": "docs/computer-networks/03-network-technologies.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch04",
+      "course": "computer-networks",
+      "source_pdf": "ch04. Network Access Layer.pdf",
+      "full_sha256": "a924d70d9ac8a83efa2b7e85245dc189ff10eab5da2f6bd8950fe1b4b13d9973",
+      "page_range": "all",
+      "target_md": "docs/computer-networks/04-network-access-layer.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch05-part1",
+      "course": "computer-networks",
+      "source_pdf": "ch05. Internet Layer.pdf",
+      "full_sha256": "631625d8fd4c0bf9c4a059d157b4315526bfdc3262029009a8e5c959b867994d",
+      "page_range": "1-9",
+      "target_md": "docs/computer-networks/05-internet-layer.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-16T00:00:00+09:00",
+      "notes": "기존 작성 완료 자료 (p.1~p.9 중간고사 범위, 덮어쓰기 금지)"
+    },
+    {
+      "id": "cn-ch05-part2",
+      "course": "computer-networks",
+      "source_pdf": "ch05. Internet Layer.pdf",
+      "full_sha256": "631625d8fd4c0bf9c4a059d157b4315526bfdc3262029009a8e5c959b867994d",
+      "page_range": "10-27",
+      "chapter_title": "Computer Network - Chapter 05 (Part 2). Internet Layer — 라우팅 테이블·실습과 혼잡 제어",
+      "target_md": "docs/computer-networks/05-internet-layer-part2.md",
+      "status": "completed",
+      "protected_existing": false,
+      "attempts": 0,
+      "last_run_at": "2026-10-25T20:22:36+09:00",
+      "notes": "5장 후반부 (p.10 Routing Table, 실습 route print/ping/arp, Routing Information Processing, 2. Congestion Control, Review Q1~Q5)",
+      "output_sha256": "ba4b00902ca295222eeefb7ed35ef4928bdded4c0c7ef2e9ea54fc1de6c4070b",
+      "validation": {
+        "passed": true,
+        "checked_at": "2026-10-25T20:22:36+09:00",
+        "issues": []
+      }
+    }
+  ]
+}

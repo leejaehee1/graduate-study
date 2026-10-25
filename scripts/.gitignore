@@ -1,0 +1,17 @@
+# Logs and temporary runtime artifacts
+logs/
+tmp/
+*.tmp
+*.bak
+.DS_Store
+
+# Never commit credentials, OAuth tokens, or rclone configs
+*.conf
+rclone.conf
+*token*
+*secret*
+*credentials*
+*.key
+*.pem
+.env
+.env.*
