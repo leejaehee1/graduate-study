@@ -3,9 +3,9 @@
 > 한양대학교 공학대학원 컴퓨터공학 - Computer Network\
 > 원본: `ch05. Internet Layer.pdf` (교수님 수업 메모가 추가된 PDF)\
 > 학습 범위: **p.3 ~ p.9 — 1. Functions of the Network Layer 중 Routing 분류까지**\
-> 이전 장: [Chapter 4. Network Access Layer](./04-network-access-layer.md)
+> 이전 장: [Chapter 4. Network Access Layer](./04-network-access-layer.md) · 다음 노트: [Chapter 5 (Part 2). Internet Layer (p.10 ~ p.27)](./05-internet-layer-part2.md)
 >
-> ⚠️ p.9에 "**중간고사 범위는 여기까지**, 중간고사 끝나고 실습한다"라는 메모가 있어, 이 노트는 **p.9까지** 만 정리한다. p.10 이후(Routing Table, 실습, 2. Congestion Control)는 중간고사 이후 진도에서 정리한다.
+> ⚠️ p.9에 "**중간고사 범위는 여기까지**, 중간고사 끝나고 실습한다"라는 메모가 있어, 이 노트는 **p.9까지** 만 정리한다. p.10 이후(Routing Table, 실습, 2. Congestion Control)는 [5장 (Part 2) 후반부 노트](./05-internet-layer-part2.md)에 정리되어 있다.
 >
 > p.1 ~ p.2에는 교수님이 알려 주신 **중간고사 출제 메모** 가 있어서 맨 앞 [0. 중간고사 대비](#_0-중간고사-대비-p-1-p-2-수업-메모) 에 따로 정리했다.
 

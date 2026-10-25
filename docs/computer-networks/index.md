@@ -37,3 +37,4 @@
 | [3장. Network Technologies](./03-network-technologies.md) | 인터페이스, 프로토콜, 표준화, 전송 매체, DNS |
 | [4장. Network Access Layer](./04-network-access-layer.md) | 토폴로지, IEEE 802, MAC/LLC, CSMA/CD·CA, 토큰, 도메인 |
 | [5장. Internet Layer](./05-internet-layer.md) | 네트워크 계층 기능, 연결형/비연결형, 라우팅 (p.9까지) |
+| [5장 (Part 2). Internet Layer — 후반부](./05-internet-layer-part2.md) | 라우팅 테이블, 실습(`route print`·`ping`·`arp`), 라우팅 정보 처리, 혼잡 제어·트래픽 성형·ECN (p.10~27) |
