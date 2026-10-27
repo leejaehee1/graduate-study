@@ -76,6 +76,32 @@
       "notes": "기존 작성 완료 자료 (덮어쓰기 금지)"
     },
     {
+      "id": "ai-ch08",
+      "course": "artificial-intelligence",
+      "source_pdf": "AI-ch08.pdf",
+      "full_sha256": "718f603d6aaca82af30ebb84a44c981099e335517602b21125ae8e50e60f1c1d",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/07-first-order-logic.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-27T20:20:00+09:00",
+      "notes": "Chapter 8. 일차 논리 (First-Order Logic) 수업 필기 반영 정리"
+    },
+    {
+      "id": "ai-expert-systems",
+      "course": "artificial-intelligence",
+      "source_pdf": "제4장 전문가 시스템.pptx",
+      "full_sha256": "21d7a4ec2dbda3a811d1ea814b8e21ddd69e051915fc37573e9871da15360918",
+      "page_range": "all",
+      "target_md": "docs/artificial-intelligence/08-expert-systems.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-10-27T20:20:00+09:00",
+      "notes": "제4장 전문가 시스템 (규칙·장단기 기억·순방향/역방향 추론·Lab 1/2·충돌 해법) 정리"
+    },
+    {
       "id": "cn-ch01",
       "course": "computer-networks",
       "source_pdf": "ch01. Introduction.pdf",

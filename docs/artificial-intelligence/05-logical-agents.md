@@ -2,7 +2,7 @@
 
 > 인공지능 강의 정리 노트
 > 원본: `AI-ch07.pdf` (Russell & Norvig, *Artificial Intelligence: A Modern Approach* 7장 기반)
-> 이전 장: [Chapter 3. 탐색](./03-search.md) · 관련 장: [2장. 지능형 에이전트](./02-intelligent-agents.md), [3장. 탐색](./03-search.md)
+> 이전 장: [Chapter 3. 탐색](./03-search.md) · 다음 장: [Chapter 8. 일차 논리](./07-first-order-logic.md) · 관련 장: [2장. 지능형 에이전트](./02-intelligent-agents.md), [제4장. 전문가 시스템](./08-expert-systems.md)
 
 ---
 

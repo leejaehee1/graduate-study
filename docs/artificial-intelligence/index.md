@@ -10,6 +10,8 @@
 | [Chapter 2. 지능형 에이전트](./02-intelligent-agents.md) | 에이전트와 환경, 합리성, PEAS, 에이전트 구조 | `AI-ch02.pdf` |
 | [Chapter 3. 탐색](./03-search.md) | 문제 정의, 무정보 탐색, 휴리스틱 탐색(A\*) | `AI-ch03.pdf` |
 | [Chapter 7. 논리적 에이전트](./05-logical-agents.md) | 지식 기반 에이전트, 웜푸스 세계, 명제 논리, 함의 | `AI-ch07.pdf` |
+| [Chapter 8. 일차 논리 (First-Order Logic)](./07-first-order-logic.md) | 객체·관계·함수, 모델과 해석, 한정사($\forall, \exists$), DB 의미론, 상황 미적분 | `AI-ch08.pdf` |
+| [제4장. 전문가 시스템 (Expert Systems)](./08-expert-systems.md) | 생성 규칙(`IF-THEN`), 장기 기억(규칙)·단기 기억(사실), 순방향·역방향 추론, 충돌 해법 | `제4장 전문가 시스템.pptx` |
 
 ## 실무 프로젝트 (실습)
 
