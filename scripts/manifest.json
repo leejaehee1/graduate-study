@@ -102,6 +102,19 @@
       "notes": "제4장 전문가 시스템 (규칙·장단기 기억·순방향/역방향 추론·Lab 1/2·충돌 해법) 정리"
     },
     {
+      "id": "ai-ch10-kr",
+      "course": "artificial-intelligence",
+      "source_pdf": "제05장 지식표현(강의)-변경.key",
+      "full_sha256": "2bf6c65643ef79e72f1e1e86694a4388e5b27f2a0ab7a214694932cf9e65cb45",
+      "page_range": "1-25 (시험 범위 p.21까지)",
+      "target_md": "docs/artificial-intelligence/09-knowledge-representation.md",
+      "status": "completed",
+      "protected_existing": true,
+      "attempts": 1,
+      "last_run_at": "2026-11-03T20:45:00+09:00",
+      "notes": "Chapter 10 (제5장). 지식 표현 (온톨로지·범주·실체화·사건 미적분·시간 구간·시맨틱 네트워크) 정리"
+    },
+    {
       "id": "cn-ch01",
       "course": "computer-networks",
       "source_pdf": "ch01. Introduction.pdf",

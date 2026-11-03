@@ -2,7 +2,7 @@
 
 > 인공지능 강의 정리 노트
 > 원본: `AI-ch08.pdf` (Russell & Norvig, *Artificial Intelligence: A Modern Approach* 8장 기반, 슬라이드 1~27쪽)
-> 이전 장: [Chapter 7. 논리적 에이전트](./05-logical-agents.md) · 함께 배운 장: [제4장. 전문가 시스템](./08-expert-systems.md)
+> 이전 장: [Chapter 7. 논리적 에이전트](./05-logical-agents.md) · 함께 배운 장: [제4장. 전문가 시스템](./08-expert-systems.md) · 다음 장: [Chapter 10. 지식 표현](./09-knowledge-representation.md) · 시험 대비: [중간고사 대비](./midterm-review.md)
 
 ---
 
@@ -25,7 +25,7 @@
 ### 🎯 이 장의 핵심 질문과 수업 도입 메모 (`p.1`~`p.2`)
 
 > **📝 수업 필기 (`p.1`)**
-> - 지난 시간에는 Logical Agent를 배웠다: **PL(Propositional Logic, 명제 논리)** — 단순한 형태의 문장으로 표현력이 **상당히 제한적**이다.
+> - 지난 시간에는 Logical Agent를 배웠다: **PL(Propositional Logic, 명제 논리)** — 단순한 형태의 문장으로 표현력이 **상당히 제한적** 이다.
 > - 이번 시간에는 **FOL(First-Order Logic, 일차 논리)** — 지식 기반(Knowledge Base) 표현력을 대폭 확장한다.
 
 - **Outline (`p.2`)**:
@@ -49,14 +49,14 @@
 | ☹️ **단점** | **매우 제한적인 표현력**<br>(`very limited expressive power`) | 자연어와 달리 **"구덩이(pit)는 인접한 칸에 바람(breeze)을 일으킨다"** 라는 일반 규칙을 한 문장으로 말할 수 없고, **모든 칸마다 일일이 별도의 문장**($B_{1,1} \Leftrightarrow (P_{1,2} \lor P_{2,1})$ 등)을 다 적어 주어야 한다. |
 
 > **📝 수업 필기 (`p.3`)**
-> - 명제 논리의 **가장 큰 단점은 표현력이 떨어져서 현실과 동떨어져 있다**는 점이다.
-> - 이를 **개선한 것이 FOL(일차 논리)** 이다. **좀 더 자연어 표현에 가깝게 지식을 추론하고 표현**할 수 있다.
+> - 명제 논리의 **가장 큰 단점은 표현력이 떨어져서 현실과 동떨어져 있다** 는 점이다.
+> - 이를 **개선한 것이 FOL(일차 논리)** 이다. **좀 더 자연어 표현에 가깝게 지식을 추론하고 표현** 할 수 있다.
 
 ---
 
 ### 1.2 일차 논리(First-Order Logic)가 바라보는 세상 (`p.4`)
 
-명제 논리가 세상에 오직 **단순 사실(facts)** 만 존재한다고 가정하는 반면, **일차 논리(FOL)** 는 자연어와 마찬가지로 세상이 다음 **세 가지 요소**로 이루어져 있다고 가정합니다.
+명제 논리가 세상에 오직 **단순 사실(facts)** 만 존재한다고 가정하는 반면, **일차 논리(FOL)** 는 자연어와 마찬가지로 세상이 다음 **세 가지 요소** 로 이루어져 있다고 가정합니다.
 
 1. **Objects (객체 / 개체)**:
    - 사람, 집, 숫자, 이론, 클라우스 요하니스(`Klaus Iohannis`), 색상, 야구 경기, 전쟁, 세기(centuries) 등 세상에 존재하는 개별 대상들.
@@ -67,7 +67,7 @@
    - `father of`(~의 아버지), `best friend`(~의 단짝 친구), `third inning of`(~의 3회), `one more than`(~보다 1 큰 수), `end of`(~의 끝) 등 **주어진 객체에 대해 단 하나의 결과 객체(값)를 대응시키는 관계**.
 
 > **📝 수업 필기 (`p.4`)**
-> - **오브젝트(Object)와 관계(Relation)로 표현하여 실제 세상을 기술**한다.
+> - **오브젝트(Object)와 관계(Relation)로 표현하여 실제 세상을 기술** 한다.
 > - **대표적으로 ER 다이어그램**(Entity-Relationship Diagram, 개체-관계 모델)과 같은 철학이다.
 
 ---
@@ -93,7 +93,7 @@
 
 ### 2.1 기본 구성 요소 (Basic Elements) (`p.7`)
 
-> **📝 수업 필기 (`p.7`)**: 명제 논리에서 기호와 표현을 넓힌 **확장된 논리**이다.
+> **📝 수업 필기 (`p.7`)**: 명제 논리에서 기호와 표현을 넓힌 **확장된 논리** 이다.
 
 | 구성 요소 | 슬라이드 예시 | 역할 및 설명 |
 |---|---|---|
@@ -102,7 +102,7 @@
 | **Functions (함수 기호)** | `Sqrt`, `LeftLegOf`, $\dots$ | 객체를 입력받아 **또 다른 객체(Object)** 를 반환하는 함수적 관계 |
 | **Variables (변수)** | $x, y, a, b, \dots$ | 구체적인 객체가 정해지지 않은 빈자리 (한정사와 함께 쓰임) |
 | **Connectives (논리 연결사)** | $\land, \lor, \lnot, \Rightarrow, \Leftrightarrow$ | 문장들을 연결하는 **논리기호** (`p.7` 필기) |
-| **Equality (등호)** | $=$ | 두 항(Term)이 **동일한 객체**를 가리킴을 나타냄 |
+| **Equality (등호)** | $=$ | 두 항(Term)이 **동일한 객체** 를 가리킴을 나타냄 |
 | **Quantifiers (한정사 / 양화사)** | $\forall$ (전칭), $\exists$ (존재) | 변수가 가리키는 대상의 범위(전체 또는 일부)를 지정 |
 
 ---
@@ -141,12 +141,12 @@ OPERATOR PRECEDENCE (우선순위 높음 → 낮음):  ¬, =, ∧, ∨, ⇒, ⇔
 
 #### ① 항 (Term) — 객체를 가리키는 표현 (`p.8`)
 $$\text{Term} = \text{function}(\text{term}_1, \dots, \text{term}_n) \;\text{ or }\; \text{constant} \;\text{ or }\; \text{variable}$$
-- **항(Term)** 은 참/거짓을 가지는 문장이 아니라 **세상 속의 객체(Object)를 지칭하는 명사구**입니다.
+- **항(Term)** 은 참/거짓을 가지는 문장이 아니라 **세상 속의 객체(Object)를 지칭하는 명사구** 입니다.
 - 상수(`KingJohn`), 변수(`x`), 또는 함수 호출(`LeftLegOf(Richard)`, `Father(Richard)`)이 모두 항(Term)이 됩니다. 함수 안에 또 함수를 중첩(`Length(LeftLegOf(Richard))`)할 수도 있습니다.
 
 #### ② 원자 문장 (Atomic Sentence) — 가장 기본이 되는 참/거짓 문장 (`p.8`)
 $$\text{Atomic sentence} = \text{predicate}(\text{term}_1, \dots, \text{term}_n) \;\text{ or }\; \text{term}_1 = \text{term}_2$$
-- 술어 기호 안에 항(Term)들을 넣거나, 두 항을 등호($=$)로 연결하면 비로소 **참/거짓을 판별할 수 있는 문장**이 됩니다.
+- 술어 기호 안에 항(Term)들을 넣거나, 두 항을 등호($=$)로 연결하면 비로소 **참/거짓을 판별할 수 있는 문장** 이 됩니다.
 - **슬라이드 예시 (`p.8`)**:
   - $\text{Brother}(\text{KingJohn}, \text{RichardTheLionheart})$ — 존 왕과 사자심왕 리처드는 형제이다.
   - $>(\text{Length}(\text{LeftLegOf}(\text{Richard})), \text{Length}(\text{LeftLegOf}(\text{KingJohn})))$ — 리처드의 왼다리 길이가 존 왕의 왼다리 길이보다 길다.
@@ -169,7 +169,7 @@ $$\text{Atomic sentence} = \text{predicate}(\text{term}_1, \dots, \text{term}_n)
 > **📝 수업 필기 (`p.10`)**
 > - **참이라는 것은 모델(Model) 관점과 인터프리테이션(Interpretation)에서 참이어야 한다.**
 > - 논리학에서는 우리가 만든 기호 체계(Syntax)만으로는 참/거짓을 판단할 수 없고, 이 기호가 실제 세계(Model)에서 무엇을 뜻하는지 **해석(Interpretation)** 을 지정해 주어야 한다.
-> - **Interpretation**은 **논리식에 적힌 기호(이름표)들이 실제 세상(모델)의 무엇을 가리키는가(Referent, 지시 대상)를 짝지어 주는 규칙**이다.
+> - **Interpretation** 은 **논리식에 적힌 기호(이름표)들이 실제 세상(모델)의 무엇을 가리키는가(Referent, 지시 대상)를 짝지어 주는 규칙** 이다.
 
 1. **모델 (Model)**:
    - 1개 이상의 **객체(objects, domain elements)** 들과 **그들 사이의 관계(relations among them)** 로 이루어진 세계입니다.
@@ -183,7 +183,7 @@ $$\text{Atomic sentence} = \text{predicate}(\text{term}_1, \dots, \text{term}_n)
 | **Function symbols (함수 기호)** | $\rightarrow$ | **functional relations (함수적 관계)** | 입력 개체마다 유일한 결과 개체를 대응시키는 함수적 관계를 지정 |
 
 3. **원자 문장의 참·거짓 판정 조건 (`p.10`, `p.12`)**:
-   - 원자 문장 $\text{predicate}(\text{term}_1, \dots, \text{term}_n)$이 **참(true)** 이 될 필요충분조건(iff)은, 각 항 $\text{term}_1, \dots, \text{term}_n$이 가리키는 **객체들의 순서쌍**이 $\text{predicate}$가 가리키는 **관계(relation) 집합 안에 포함되어 있는 것**입니다.
+   - 원자 문장 $\text{predicate}(\text{term}_1, \dots, \text{term}_n)$이 **참(true)** 이 될 필요충분조건(iff)은, 각 항 $\text{term}_1, \dots, \text{term}_n$이 가리키는 **객체들의 순서쌍** 이 $\text{predicate}$가 가리키는 **관계(relation) 집합 안에 포함되어 있는 것** 입니다.
 
 ---
 
@@ -290,7 +290,7 @@ $$\text{Atomic sentence} = \text{predicate}(\text{term}_1, \dots, \text{term}_n)
 ## 6. 지식 베이스(KB) vs 데이터베이스 의미론 (UNA · CWA · DC) (`p.19`)
 
 > **📝 수업 필기 (`p.19`)**
-> - **널러지베이스(Knowledge Base)와 디비(Database)랑 차이가 있다**를 설명.
+> - **널러지베이스(Knowledge Base)와 디비(Database)랑 차이가 있다** 를 설명.
 > - **널러지베이스에서는 모든 관계를 다 기술해야 하고, 데이터베이스는 기본 가정이 있다.**
 
 ### 6.1 왜 일차 논리(KB)에서는 문장이 길어지는가?
@@ -307,11 +307,11 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 ### 6.2 데이터베이스의 3가지 기본 가정 (Database Semantics) (`p.19`)
 
-반면 **데이터베이스(DB)** 는 다음 **3가지 가정**을 기본으로 깔고 있습니다:
+반면 **데이터베이스(DB)** 는 다음 **3가지 가정** 을 기본으로 깔고 있습니다:
 
 | 기본 가정 | 원문 정의 | 의미 및 효과 |
 |---|---|---|
-| **① Unique names assumption (UNA)**<br>고유 이름 가정 | `every constant refer to a distinct object` | 서로 다른 상수 기호는 무조건 **서로 다른 객체**를 가리킨다.<br>$\rightarrow$ $\text{John} \neq \text{Geoffrey}$를 따로 적을 필요가 없다! |
+| **① Unique names assumption (UNA)**<br>고유 이름 가정 | `every constant refer to a distinct object` | 서로 다른 상수 기호는 무조건 **서로 다른 객체** 를 가리킨다.<br>$\rightarrow$ $\text{John} \neq \text{Geoffrey}$를 따로 적을 필요가 없다! |
 | **② Closed world assumption (CWA)**<br>닫힌 세계 가정 | `atomic sentences not known to be true are in fact false` | 참이라고 알려지지 않은(DB에 저장되지 않은) 원자 문장은 **모두 거짓(false)** 으로 간주한다.<br>$\rightarrow$ 적히지 않은 다른 형제는 자동으로 거짓이 된다! |
 | **③ Domain closure (DC)**<br>영역 폐쇄 가정 | `each model contains no more domain elements than those named by the constant symbols` | 모델 안에는 상수 기호로 이름 붙여진 개체들 외에 **이름 없는 추가 개체가 더 존재하지 않는다**. |
 
@@ -355,7 +355,7 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 ## 8. 일차 논리로 표현한 웜푸스 세계 (`p.21`~`p.22`)
 
-명제 논리에서는 칸마다 수십 개씩 적어야 했던 웜푸스 세계의 규칙이, 일차 논리에서는 변수($t, x, y$)와 한정사($\forall, \exists$) 덕분에 **단 한 줄의 일반 규칙**으로 깔끔하게 표현됩니다.
+명제 논리에서는 칸마다 수십 개씩 적어야 했던 웜푸스 세계의 규칙이, 일차 논리에서는 변수($t, x, y$)와 한정사($\forall, \exists$) 덕분에 **단 한 줄의 일반 규칙** 으로 깔끔하게 표현됩니다.
 
 ### 8.1 지각(Perception), 반사(Reflex), 인접(Adjacent) 규칙 (`p.21`)
 
@@ -382,8 +382,8 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 | 구분 | 수식 | 설명 및 한계 |
 |---|---|---|
-| **Diagnostic rule**<br>(진단 규칙: 결과 $\rightarrow$ 원인) | $\forall y \; \text{Breezy}(y) \Rightarrow \exists x \; \text{Pit}(x) \land \text{Adjacent}(x, y)$ | 바람이라는 **결과**로부터 구덩이라는 **원인**을 추론 |
-| **Causal rule**<br>(인과 규칙: 원인 $\rightarrow$ 결과) | $\forall x, y \; \text{Pit}(x) \land \text{Adjacent}(x, y) \Rightarrow \text{Breezy}(y)$ | 구덩이라는 **원인**으로부터 바람이라는 **결과**를 추론.<br>⚠️ 불완전함: 구덩이가 주변에 없을 때 바람이 안 분다는 보장이 없음 |
+| **Diagnostic rule**<br>(진단 규칙: 결과 $\rightarrow$ 원인) | $\forall y \; \text{Breezy}(y) \Rightarrow \exists x \; \text{Pit}(x) \land \text{Adjacent}(x, y)$ | 바람이라는 **결과** 로부터 구덩이라는 **원인** 을 추론 |
+| **Causal rule**<br>(인과 규칙: 원인 $\rightarrow$ 결과) | $\forall x, y \; \text{Pit}(x) \land \text{Adjacent}(x, y) \Rightarrow \text{Breezy}(y)$ | 구덩이라는 **원인** 으로부터 바람이라는 **결과** 를 추론.<br>⚠️ 불완전함: 구덩이가 주변에 없을 때 바람이 안 분다는 보장이 없음 |
 | **Definition for `Breezy`**<br>(쌍조건 $\Leftrightarrow$ 완전 정의) ⭐ | $\forall y \; \text{Breezy}(y) \Leftrightarrow \big[\exists x \; \text{Pit}(x) \land \text{Adjacent}(x, y)\big]$ | 진단 규칙과 인과 규칙을 하나로 합친 **완전한 정의**.<br>바람이 안 불면($\lnot\text{Breezy}(y)$) 인접 칸에 구덩이가 없다는 것까지 추론 가능! |
 
 ---
@@ -398,16 +398,16 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 - 세상의 사실들은 영원히(`eternally`) 고정되어 있지 않고 **상황(situation)에 따라 변합니다**.
 - **Situation calculus (상황 미적분)** 는 일차 논리에서 시간/행동에 따른 변화를 표현하는 표준 방식입니다:
-  1. 변할 수 있는 모든 술어(fluent)의 마지막 인자로 **상황(situation) 변수**를 추가합니다.
+  1. 변할 수 있는 모든 술어(fluent)의 마지막 인자로 **상황(situation) 변수** 를 추가합니다.
      - 예: $\text{Holding}(\text{Gold})$ 대신 $\text{Holding}(\text{Gold}, \text{Now})$ 또는 $\text{Holding}(\text{Gold}, S_0)$.
-  2. 상황과 상황 사이를 **`Result(a, s)` 함수**로 연결합니다.
+  2. 상황과 상황 사이를 **`Result(a, s)` 함수** 로 연결합니다.
      - $\text{Result}(a, s)$: 상황 $s$에서 행동 $a$를 수행한 결과로 도달하는 **다음 상황(새 상황 객체)** 을 반환합니다. (그림: $S_1 = \text{Result}(\text{Forward}, S_0)$)
 
 ---
 
 ### 9.2 행동 기술 I: 효과 공리와 프레임 문제 (`p.24`)
 
-행동이 세계에 미치는 영향을 기술할 때 직면하는 **3가지 고전적 문제**입니다:
+행동이 세계에 미치는 영향을 기술할 때 직면하는 **3가지 고전적 문제** 입니다:
 
 | 개념 / 문제 | 수식 및 정의 | 핵심 내용 |
 |---|---|---|
@@ -423,7 +423,7 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 **표현상의 프레임 문제(Representational frame problem)** 를 깔끔하게 해결하는 방법이 **후속 상태 공리(Successor-state axioms)** 입니다.
 
-- **핵심 아이디어**: 공리를 '행동(action)'마다 적지 말고, **변하는 '술어(predicate)' 하나마다 딱 한 줄의 쌍조건문($\Leftrightarrow$)으로 정의**합니다!
+- **핵심 아이디어**: 공리를 '행동(action)'마다 적지 말고, **변하는 '술어(predicate)' 하나마다 딱 한 줄의 쌍조건문($\Leftrightarrow$)으로 정의** 합니다!
 - **후속 상태 공리의 일반 공식 (`p.25`)**:
   $$\text{행동 후 } P\text{가 참이다} \;\Leftrightarrow\; \big[\text{방금 한 행동이 } P\text{를 참으로 만들었거나} \;\lor\; (\text{원래 } P\text{가 참이었고 방금 한 행동이 } P\text{를 거짓으로 만들지 않았다})\big]$$
 
@@ -439,7 +439,7 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 ## 10. 일차 논리에서의 지식 공학 (Knowledge Engineering) (`p.26`)
 
-**지식 공학자(Knowledge engineer)** 가 특정 도메인을 조사하여 중요한 개념을 파악하고, 도메인의 객체와 관계를 형식적 논리 표현으로 구축하는 **7단계 절차**입니다:
+**지식 공학자(Knowledge engineer)** 가 특정 도메인을 조사하여 중요한 개념을 파악하고, 도메인의 객체와 관계를 형식적 논리 표현으로 구축하는 **7단계 절차** 입니다:
 
 | 단계 | 원문 단계명 | 설명 및 핵심 키워드 |
 |---|---|---|
@@ -466,7 +466,7 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 
 > **📝 슬라이드 하단 교수님 수업 총정리 메모 (`p.27`)**
 > 1. **[전문가 시스템](./08-expert-systems.md) PPT 연결**:
->    - **순방향 추론(Forward Chaining)** 과 **역방향 추론(Backward Chaining)** 방법이 있으며, **역방향 추론은 목표(결과)를 가지고 필요한 것만 추론하니까 조금 더 효율적**이라는 평가를 받는다.
+>    - **순방향 추론(Forward Chaining)** 과 **역방향 추론(Backward Chaining)** 방법이 있으며, **역방향 추론은 목표(결과)를 가지고 필요한 것만 추론하니까 조금 더 효율적** 이라는 평가를 받는다.
 >    - 전문가 시스템은 **Rule-base(규칙 기반)** 이며, **장기 기억(Long-Term Memory)에는 규칙(Rule)** 이 들어가고 **단기 기억(Short-Term Memory)에는 사실(Fact)** 이 들어간다.
 > 2. **다음 시간 예고**:
 >    - 최근에는 **온톨로지(Ontology)** 가 많이 나오는데, 다음 시간에 온톨로지를 배운다.
@@ -488,7 +488,7 @@ $$\underbrace{\text{Brother}(\text{John}, \text{Richard}) \land \text{Brother}(\
 <details><summary>▶ 정답 보기</summary>
 
 - **상수 기호(Constant symbols)** $\rightarrow$ **객체(Objects)**
-- **술어 기호(Predicate symbols)** $\rightarrow$ **관계(Relations)** (평가 결과는 **참/거짓 진릿값**이 되며 원자 문장을 이룸)
+- **술어 기호(Predicate symbols)** $\rightarrow$ **관계(Relations)** (평가 결과는 **참/거짓 진릿값** 이 되며 원자 문장을 이룸)
 - **함수 기호(Function symbols)** $\rightarrow$ **함수적 관계(Functional relations)** (평가 결과는 진릿값이 아니라 **또 다른 유일한 객체(Object)** 이며 항(Term)을 이룸)
 </details>
 
