@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // VitePress 기본 slugify와 같은 규칙이지만, NFKD로 분해된 한글 자모를 NFC로 다시 합친다.
 // 기본값은 한글 제목의 앵커가 자모 단위로 쪼개져 목차 링크(완성형 한글)와 일치하지 않는다.
 const rControl = /[\u0000-\u001f]/g
-const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g
+const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/\u2013\u2014\u00b7★☆⭐]+/g
 const rCombining = /[̀-ͯ]/g
 const slugify = (str: string) =>
   str
@@ -25,7 +25,19 @@ export default defineConfig({
 
   markdown: {
     math: true,
-    anchor: { slugify }
+    anchor: { slugify },
+    config(md) {
+      md.core.ruler.before('inline', 'korean-bold-after-punct', (state) => {
+        for (const token of state.tokens) {
+          if (token.type === 'inline' && token.content.includes('**')) {
+            token.content = token.content.replace(
+              /\*\*([^\n*<>]+?[^\s*<>])\*\*(?=[가-힣])/g,
+              '<strong>$1</strong>'
+            )
+          }
+        }
+      })
+    }
   },
 
   themeConfig: {
